@@ -6,7 +6,7 @@ module.exports={
         b:path.resolve('./src/b.js'),
     },
     output:{
-        path:path.resolve('./dist'),
+        path:path.resolve('/dist'),
         filename:'[name].js'
     },
     module:{
@@ -17,7 +17,7 @@ module.exports={
     plugins: [new HtmlWebpackPlugin(
             {
                 title:'a.html',
-                filename:'./view/a`.html',
+                filename:'./view/a.html',
                 template:'./view/a.html',
                 chunks:['a'],
             }
